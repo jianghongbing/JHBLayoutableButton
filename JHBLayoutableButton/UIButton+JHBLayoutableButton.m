@@ -26,7 +26,7 @@
 }
 
 - (void)dealloc {
-    [self.titleLabel removeObserver:self forKeyPath:NSStringFromSelector(@selector(font))];
+    [self.titleLabel removeObserver:self forKeyPath:@"font"];
 }
 
 #pragma mark KVO
@@ -35,7 +35,6 @@
         self.titleLabelFont = change[NSKeyValueChangeNewKey];
     }
 }
-
 
 #pragma mark override
 - (CGRect)imageRectForContentRect:(CGRect)contentRect {
