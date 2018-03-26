@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE31AC7B2068C4A4005E6630 /* ImageOnlyStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE31AC7A2068C4A4005E6630 /* ImageOnlyStyleViewController.m */; };
+		CE31AC7E2068C559005E6630 /* UIImage+JHBCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CE31AC7D2068C559005E6630 /* UIImage+JHBCategory.m */; };
+		CE31AC812068C84D005E6630 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE31AC802068C84D005E6630 /* BaseViewController.m */; };
+		CE31AC842068D021005E6630 /* TitleOnlyStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE31AC832068D021005E6630 /* TitleOnlyStyleViewController.m */; };
+		CE31AC872068E00B005E6630 /* ILTRStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE31AC862068E00B005E6630 /* ILTRStyleViewController.m */; };
 		CEEB0FB3206387BE00D6E8C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB0FB2206387BE00D6E8C4 /* AppDelegate.m */; };
 		CEEB0FB6206387BE00D6E8C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB0FB5206387BE00D6E8C4 /* ViewController.m */; };
 		CEEB0FB9206387BE00D6E8C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEB0FB7206387BE00D6E8C4 /* Main.storyboard */; };
@@ -16,10 +21,19 @@
 		CEEB0FC92063880A00D6E8C4 /* UIButton+JHBLayoutableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB0FC82063880A00D6E8C4 /* UIButton+JHBLayoutableButton.m */; };
 		CEEB0FCC20638B3A00D6E8C4 /* TestButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB0FCA20638B3A00D6E8C4 /* TestButton.m */; };
 		CEEB0FCF206497A400D6E8C4 /* JHBLayoutButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB0FCE206497A400D6E8C4 /* JHBLayoutButton.m */; };
-		CEEB0FD22064F54000D6E8C4 /* ButtonTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB0FD12064F54000D6E8C4 /* ButtonTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE31AC792068C4A4005E6630 /* ImageOnlyStyleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageOnlyStyleViewController.h; sourceTree = "<group>"; };
+		CE31AC7A2068C4A4005E6630 /* ImageOnlyStyleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageOnlyStyleViewController.m; sourceTree = "<group>"; };
+		CE31AC7C2068C559005E6630 /* UIImage+JHBCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JHBCategory.h"; sourceTree = "<group>"; };
+		CE31AC7D2068C559005E6630 /* UIImage+JHBCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JHBCategory.m"; sourceTree = "<group>"; };
+		CE31AC7F2068C84D005E6630 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		CE31AC802068C84D005E6630 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		CE31AC822068D021005E6630 /* TitleOnlyStyleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleOnlyStyleViewController.h; sourceTree = "<group>"; };
+		CE31AC832068D021005E6630 /* TitleOnlyStyleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleOnlyStyleViewController.m; sourceTree = "<group>"; };
+		CE31AC852068E00B005E6630 /* ILTRStyleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILTRStyleViewController.h; sourceTree = "<group>"; };
+		CE31AC862068E00B005E6630 /* ILTRStyleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILTRStyleViewController.m; sourceTree = "<group>"; };
 		CEEB0FAE206387BE00D6E8C4 /* JHBLayoutableButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHBLayoutableButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEB0FB1206387BE00D6E8C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEEB0FB2206387BE00D6E8C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,8 +50,6 @@
 		CEEB0FCB20638B3A00D6E8C4 /* TestButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestButton.h; sourceTree = "<group>"; };
 		CEEB0FCD206497A400D6E8C4 /* JHBLayoutButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHBLayoutButton.h; sourceTree = "<group>"; };
 		CEEB0FCE206497A400D6E8C4 /* JHBLayoutButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHBLayoutButton.m; sourceTree = "<group>"; };
-		CEEB0FD02064F54000D6E8C4 /* ButtonTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonTestViewController.h; sourceTree = "<group>"; };
-		CEEB0FD12064F54000D6E8C4 /* ButtonTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +86,14 @@
 				CEEB0FB2206387BE00D6E8C4 /* AppDelegate.m */,
 				CEEB0FB4206387BE00D6E8C4 /* ViewController.h */,
 				CEEB0FB5206387BE00D6E8C4 /* ViewController.m */,
-				CEEB0FD02064F54000D6E8C4 /* ButtonTestViewController.h */,
-				CEEB0FD12064F54000D6E8C4 /* ButtonTestViewController.m */,
+				CE31AC792068C4A4005E6630 /* ImageOnlyStyleViewController.h */,
+				CE31AC7A2068C4A4005E6630 /* ImageOnlyStyleViewController.m */,
+				CE31AC7F2068C84D005E6630 /* BaseViewController.h */,
+				CE31AC802068C84D005E6630 /* BaseViewController.m */,
+				CE31AC822068D021005E6630 /* TitleOnlyStyleViewController.h */,
+				CE31AC832068D021005E6630 /* TitleOnlyStyleViewController.m */,
+				CE31AC852068E00B005E6630 /* ILTRStyleViewController.h */,
+				CE31AC862068E00B005E6630 /* ILTRStyleViewController.m */,
 				CEEB0FB7206387BE00D6E8C4 /* Main.storyboard */,
 				CEEB0FBA206387BE00D6E8C4 /* Assets.xcassets */,
 				CEEB0FBC206387BE00D6E8C4 /* LaunchScreen.storyboard */,
@@ -87,6 +105,8 @@
 				CEEB0FCA20638B3A00D6E8C4 /* TestButton.m */,
 				CEEB0FCD206497A400D6E8C4 /* JHBLayoutButton.h */,
 				CEEB0FCE206497A400D6E8C4 /* JHBLayoutButton.m */,
+				CE31AC7C2068C559005E6630 /* UIImage+JHBCategory.h */,
+				CE31AC7D2068C559005E6630 /* UIImage+JHBCategory.m */,
 			);
 			path = JHBLayoutableButton;
 			sourceTree = "<group>";
@@ -163,11 +183,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEEB0FC92063880A00D6E8C4 /* UIButton+JHBLayoutableButton.m in Sources */,
+				CE31AC812068C84D005E6630 /* BaseViewController.m in Sources */,
+				CE31AC7E2068C559005E6630 /* UIImage+JHBCategory.m in Sources */,
 				CEEB0FB6206387BE00D6E8C4 /* ViewController.m in Sources */,
+				CE31AC842068D021005E6630 /* TitleOnlyStyleViewController.m in Sources */,
 				CEEB0FCF206497A400D6E8C4 /* JHBLayoutButton.m in Sources */,
-				CEEB0FD22064F54000D6E8C4 /* ButtonTestViewController.m in Sources */,
+				CE31AC872068E00B005E6630 /* ILTRStyleViewController.m in Sources */,
 				CEEB0FC1206387BE00D6E8C4 /* main.m in Sources */,
 				CEEB0FB3206387BE00D6E8C4 /* AppDelegate.m in Sources */,
+				CE31AC7B2068C4A4005E6630 /* ImageOnlyStyleViewController.m in Sources */,
 				CEEB0FCC20638B3A00D6E8C4 /* TestButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

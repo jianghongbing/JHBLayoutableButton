@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 typedef NS_ENUM(NSInteger, JHBLayoutableButtonStyle) {
-//    JHBLayoutableButtonStyleSystemDefault, //system default style
     JHBLayoutableButtonStyleILTR,//image left text right
     JHBLayoutableButtonStyleIRTL, //image right text left
     JHBLayoutableButtonStyleITTB, //image top text bottom
