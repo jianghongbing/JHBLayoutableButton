@@ -39,13 +39,16 @@
     UIButton *buttonFive = [self buttonWithStyle:JHBLayoutableButtonStyleILTR space:0 normalStateTitle:normalStateLongTitle highlightedStateTitle:highlightedStateLongTitle normalStateImage:normalStateSmallImage hightlightedStateImage:highlightedStateLargeImage];
     buttonFive.frame = CGRectMake(10, 220, 100, 60);
     
-    UIButton *buttonSix = [self buttonWithStyle:JHBLayoutableButtonStyleILTR space:10 normalStateTitle:normalStateShortTitle highlightedStateTitle:highlightedStateShortTitle normalStateImage:normalStateSmallImage hightlightedStateImage:highlightedStateSmallImage];
+    UIButton *buttonSix = [self buttonWithStyle:JHBLayoutableButtonStyleILTR space:10 normalStateTitle:normalStateShortTitle highlightedStateTitle:highlightedStateLongTitle normalStateImage:normalStateSmallImage hightlightedStateImage:highlightedStateSmallImage];
 //    buttonSix.contentEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 0);
 //    buttonSix.imageEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10);
     buttonSix.titleEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10);
     buttonSix.frame = CGRectMake(150, 220, 120, 60);
+    buttonSix.titleLabel.numberOfLines = 0;
+    buttonSix.titleLabel.font = [UIFont systemFontOfSize:15];
     
     UIButton *buttonSeven = [self buttonWithStyle:JHBLayoutableButtonStyleILTR space:10 normalStateTitle:normalStateLongTitle highlightedStateTitle:highlightedStateLongTitle normalStateImage:normalStateLargeImage hightlightedStateImage:highlightedStateSmallImage];
+    buttonSeven.tag = 7;
 //    buttonSeven.imageEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10);
     buttonSeven.frame = CGRectMake(10, 290, 120, 60);
     
@@ -55,8 +58,15 @@
     buttonEight.titleEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10);
     buttonEight.translatesAutoresizingMaskIntoConstraints = NO;
     [NSLayoutConstraint activateConstraints:@[[NSLayoutConstraint constraintWithItem:buttonEight attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0], [NSLayoutConstraint constraintWithItem:buttonEight attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1.0 constant:-20]]];
-    
-    
-    
+    [buttonEight addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)buttonClick:(UIButton *)button {
+    UIButton *tagButton = [self.view viewWithTag:7];
+    if (UIEdgeInsetsEqualToEdgeInsets(tagButton.contentEdgeInsets, UIEdgeInsetsZero)) {
+        tagButton.contentEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10);
+    }else {
+        tagButton.contentEdgeInsets = UIEdgeInsetsZero;
+    }
 }
 @end

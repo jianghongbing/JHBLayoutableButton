@@ -12,6 +12,9 @@
 		CE31AC812068C84D005E6630 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE31AC802068C84D005E6630 /* BaseViewController.m */; };
 		CE31AC842068D021005E6630 /* TitleOnlyStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE31AC832068D021005E6630 /* TitleOnlyStyleViewController.m */; };
 		CE31AC872068E00B005E6630 /* ILTRStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE31AC862068E00B005E6630 /* ILTRStyleViewController.m */; };
+		CE69B7522069D62700BA9F92 /* IRTLStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE69B7512069D62700BA9F92 /* IRTLStyleViewController.m */; };
+		CE69B7552069DDFE00BA9F92 /* ITTBStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE69B7542069DDFE00BA9F92 /* ITTBStyleViewController.m */; };
+		CE69B7582069E88400BA9F92 /* IBTTStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE69B7572069E88400BA9F92 /* IBTTStyleViewController.m */; };
 		CEEB0FB3206387BE00D6E8C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB0FB2206387BE00D6E8C4 /* AppDelegate.m */; };
 		CEEB0FB6206387BE00D6E8C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB0FB5206387BE00D6E8C4 /* ViewController.m */; };
 		CEEB0FB9206387BE00D6E8C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEB0FB7206387BE00D6E8C4 /* Main.storyboard */; };
@@ -34,6 +37,12 @@
 		CE31AC832068D021005E6630 /* TitleOnlyStyleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleOnlyStyleViewController.m; sourceTree = "<group>"; };
 		CE31AC852068E00B005E6630 /* ILTRStyleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILTRStyleViewController.h; sourceTree = "<group>"; };
 		CE31AC862068E00B005E6630 /* ILTRStyleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILTRStyleViewController.m; sourceTree = "<group>"; };
+		CE69B7502069D62700BA9F92 /* IRTLStyleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRTLStyleViewController.h; sourceTree = "<group>"; };
+		CE69B7512069D62700BA9F92 /* IRTLStyleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRTLStyleViewController.m; sourceTree = "<group>"; };
+		CE69B7532069DDFE00BA9F92 /* ITTBStyleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITTBStyleViewController.h; sourceTree = "<group>"; };
+		CE69B7542069DDFE00BA9F92 /* ITTBStyleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITTBStyleViewController.m; sourceTree = "<group>"; };
+		CE69B7562069E88400BA9F92 /* IBTTStyleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBTTStyleViewController.h; sourceTree = "<group>"; };
+		CE69B7572069E88400BA9F92 /* IBTTStyleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBTTStyleViewController.m; sourceTree = "<group>"; };
 		CEEB0FAE206387BE00D6E8C4 /* JHBLayoutableButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHBLayoutableButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEB0FB1206387BE00D6E8C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEEB0FB2206387BE00D6E8C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -94,6 +103,12 @@
 				CE31AC832068D021005E6630 /* TitleOnlyStyleViewController.m */,
 				CE31AC852068E00B005E6630 /* ILTRStyleViewController.h */,
 				CE31AC862068E00B005E6630 /* ILTRStyleViewController.m */,
+				CE69B7502069D62700BA9F92 /* IRTLStyleViewController.h */,
+				CE69B7512069D62700BA9F92 /* IRTLStyleViewController.m */,
+				CE69B7532069DDFE00BA9F92 /* ITTBStyleViewController.h */,
+				CE69B7542069DDFE00BA9F92 /* ITTBStyleViewController.m */,
+				CE69B7562069E88400BA9F92 /* IBTTStyleViewController.h */,
+				CE69B7572069E88400BA9F92 /* IBTTStyleViewController.m */,
 				CEEB0FB7206387BE00D6E8C4 /* Main.storyboard */,
 				CEEB0FBA206387BE00D6E8C4 /* Assets.xcassets */,
 				CEEB0FBC206387BE00D6E8C4 /* LaunchScreen.storyboard */,
@@ -185,12 +200,15 @@
 				CEEB0FC92063880A00D6E8C4 /* UIButton+JHBLayoutableButton.m in Sources */,
 				CE31AC812068C84D005E6630 /* BaseViewController.m in Sources */,
 				CE31AC7E2068C559005E6630 /* UIImage+JHBCategory.m in Sources */,
+				CE69B7552069DDFE00BA9F92 /* ITTBStyleViewController.m in Sources */,
 				CEEB0FB6206387BE00D6E8C4 /* ViewController.m in Sources */,
 				CE31AC842068D021005E6630 /* TitleOnlyStyleViewController.m in Sources */,
 				CEEB0FCF206497A400D6E8C4 /* JHBLayoutButton.m in Sources */,
 				CE31AC872068E00B005E6630 /* ILTRStyleViewController.m in Sources */,
+				CE69B7522069D62700BA9F92 /* IRTLStyleViewController.m in Sources */,
 				CEEB0FC1206387BE00D6E8C4 /* main.m in Sources */,
 				CEEB0FB3206387BE00D6E8C4 /* AppDelegate.m in Sources */,
+				CE69B7582069E88400BA9F92 /* IBTTStyleViewController.m in Sources */,
 				CE31AC7B2068C4A4005E6630 /* ImageOnlyStyleViewController.m in Sources */,
 				CEEB0FCC20638B3A00D6E8C4 /* TestButton.m in Sources */,
 			);
