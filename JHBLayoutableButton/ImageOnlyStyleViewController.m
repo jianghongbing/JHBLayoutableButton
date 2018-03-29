@@ -8,7 +8,6 @@
 
 #import "ImageOnlyStyleViewController.h"
 #import "UIButton+JHBLayoutableButton.h"
-#import "UIImage+JHBCategory.h"
 @interface ImageOnlyStyleViewController ()
 
 @end
@@ -37,7 +36,7 @@
     buttonFour.contentEdgeInsets = UIEdgeInsetsMake(10, 10, 0, 0);
     buttonFour.frame = CGRectMake(20, 200, 100, 60);
     
-    UIButton *buttonFive = [self buttonWithStyle:JHBLayoutableButtonStyleIBTT space:100 normalStateImage:normalStateLargeImage hightlightedStateImage:highlightedStateSmallImage];
+    UIButton *buttonFive = [self buttonWithStyle:JHBLayoutableButtonStyleIBTT space:100 normalStateImage:normalStateSmallImage hightlightedStateImage:highlightedStateSmallImage];
     buttonFive.imageEdgeInsets = UIEdgeInsetsMake(10, 20, 30, 30);
     buttonFive.frame = CGRectMake(150, 200, 100, 100);
 

@@ -51,7 +51,8 @@
             contentEdgeInsets:(UIEdgeInsets)contentEdgeInsets
               imageEdgeInsets:(UIEdgeInsets)imageEdgeInsets
               titleEdgeInsets:(UIEdgeInsets)titleEdgeInsets {
-    UIButton *button = [UIButton buttonWithLayoutStyle:style spaceBetweenImageAndTitle:space];
+    NSLog(@"ignoreImageAndTitleEdgeInsets:%d", self.ignoreImageAndTitleEdgeInsets);
+    UIButton *button = [UIButton buttonWithLayoutStyle:style spaceBetweenImageAndTitle:space ignoreImageAndTitleEdgeInsets:self.ignoreImageAndTitleEdgeInsets];
     [button setTitle:normalStateTitle forState:UIControlStateNormal];
     [button setTitle:hightlightedStateTitle forState:UIControlStateHighlighted];
     [button setImage:normalStateImage forState:UIControlStateNormal];

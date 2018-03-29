@@ -16,7 +16,7 @@ typedef NS_ENUM(NSInteger, JHBLayoutableButtonStyle) {
 @interface UIButton (JHBLayoutableButton)
 
 /**
- UIButton instance convenience construction
+ UIButton instance convenience constructor
 
  @param layoutStyle button layout sytle
  @param space space between image and title, if only image or title, will be ignored
@@ -27,26 +27,15 @@ typedef NS_ENUM(NSInteger, JHBLayoutableButtonStyle) {
 
 
 /**
- UIButton instance convenience construction
+ UIButton instance convenience constructor
  
  @param layoutStyle button layout sytle
  @param space space between image and title, if only image or title, will be ignored
- @param ignoreImageAndTitleEdgeInsets ignore image and title edge insets, edge insets make  layoutcomplicated, suggest use space to layout and ignore all edge insets
+ @param ignoreImageAndTitleEdgeInsets ignore image and title edge insets, edge insets make  layoutcomplicated, suggest use space to layout and ignore ignore image and title edge insets
  @return UIButton instance
  */
 + (UIButton *)buttonWithLayoutStyle:(JHBLayoutableButtonStyle)layoutStyle
           spaceBetweenImageAndTitle:(CGFloat)space
       ignoreImageAndTitleEdgeInsets: (BOOL)ignoreImageAndTitleEdgeInsets;
 
-/**
- UIButton instance convenience construction
- 
- @param layoutStyle button layout sytle
- @param space space between image and title, if only image or title, will be ignored
- @param ignoreAllEdgeInsets ignore button content, image and title edge insets, edge insets make  layout complicated,suggest use space to layout and ignore all edge insets
- @return UIButton instance
- */
-+ (UIButton *)buttonWithLayoutStyle:(JHBLayoutableButtonStyle)layoutStyle
-          spaceBetweenImageAndTitle:(CGFloat)space
-                ignoreAllEdgeInsets:(BOOL)ignoreAllEdgeInsets;
 @end

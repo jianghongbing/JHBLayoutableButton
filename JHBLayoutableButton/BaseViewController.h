@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UIButton+JHBLayoutableButton.h"
 @interface BaseViewController : UIViewController
+@property (nonatomic) BOOL ignoreImageAndTitleEdgeInsets;
 - (UIButton *)buttonWithStyle:(JHBLayoutableButtonStyle)style
                         space:(CGFloat)space
              normalStateTitle:(NSString *)normalStateTitle

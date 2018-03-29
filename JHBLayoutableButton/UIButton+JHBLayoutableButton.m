@@ -13,7 +13,6 @@
 @property (nonatomic, strong) UIFont *titleLabelFont;
 @property (nonatomic) NSInteger titleLabelNumberOfLines;
 @property (nonatomic, getter = isIgnoreImageAndTitleEdgeInsets) BOOL ignoreImageAndTitleEdgeInsets;
-@property (nonatomic, getter = isIgnoreAllEdges) BOOL ignoreAllEdgeInsets;
 @end
 
 static NSString * const kJHBTitleLabelFontKeyPath = @"font";
@@ -23,8 +22,7 @@ static NSString * const kJHBTitleLabelNumberOfLinesKeyPath = @"numberOfLines";
 #pragma mark initializer
 - (instancetype)initWithLayoutStyle:(JHBLayoutableButtonStyle)style
                               space:(CGFloat)space
-      ignoreImageAndTitleEdgeInsets:(BOOL)ignoreImageAndTitleEdgeInsets
-                ignoreAllEdgeInsets:(BOOL)ignoreAllEdgeInsets{
+      ignoreImageAndTitleEdgeInsets:(BOOL)ignoreImageAndTitleEdgeInsets {
     self = [super init];
     if(self) {
         _style = style;
@@ -32,7 +30,6 @@ static NSString * const kJHBTitleLabelNumberOfLinesKeyPath = @"numberOfLines";
         _titleLabelFont = self.titleLabel.font;
         _titleLabelNumberOfLines = 1;
         _ignoreImageAndTitleEdgeInsets = ignoreImageAndTitleEdgeInsets;
-        _ignoreAllEdgeInsets = ignoreAllEdgeInsets;
         [self.titleLabel addObserver:self forKeyPath:kJHBTitleLabelFontKeyPath options:NSKeyValueObservingOptionNew context:nil];
         [self.titleLabel addObserver:self forKeyPath:kJHBTitleLabelNumberOfLinesKeyPath options:NSKeyValueObservingOptionNew context:nil];
     }
@@ -326,18 +323,18 @@ static NSString * const kJHBTitleLabelNumberOfLinesKeyPath = @"numberOfLines";
 
 
 - (UIEdgeInsets)p_contentEdgeInsets {
-    return self.isIgnoreAllEdges ? UIEdgeInsetsZero : self.contentEdgeInsets;
+    return self.contentEdgeInsets;
 }
 
 - (UIEdgeInsets)p_imageEdgeInsets {
-    if (self.isIgnoreAllEdges || self.isIgnoreImageAndTitleEdgeInsets || [self p_imageIsValid]) {
+    if (self.isIgnoreImageAndTitleEdgeInsets || ![self p_imageIsValid]) {
         return UIEdgeInsetsZero;
     }
     return self.imageEdgeInsets;
 }
 
 - (UIEdgeInsets)p_titleEdgeInsets {
-    if (self.isIgnoreAllEdges || self.isIgnoreImageAndTitleEdgeInsets || [self p_titleIsValid]) {
+    if (self.isIgnoreImageAndTitleEdgeInsets || ![self p_titleIsValid]) {
         return UIEdgeInsetsZero;
     }
     return self.titleEdgeInsets;
@@ -356,12 +353,7 @@ static NSString * const kJHBTitleLabelNumberOfLinesKeyPath = @"numberOfLines";
 }
 
 + (UIButton *)buttonWithLayoutStyle:(JHBLayoutableButtonStyle)layoutStyle spaceBetweenImageAndTitle:(CGFloat)space ignoreImageAndTitleEdgeInsets:(BOOL)ignoreImageAndTitleEdgeInsets {
-    return [[JHBLayoutableButton alloc] initWithLayoutStyle:layoutStyle space:space ignoreImageAndTitleEdgeInsets:ignoreImageAndTitleEdgeInsets ignoreAllEdgeInsets:NO];
+    return [[JHBLayoutableButton alloc] initWithLayoutStyle:layoutStyle space:space ignoreImageAndTitleEdgeInsets:ignoreImageAndTitleEdgeInsets];
 }
 
-+ (UIButton *)buttonWithLayoutStyle:(JHBLayoutableButtonStyle)layoutStyle
-          spaceBetweenImageAndTitle:(CGFloat)space
-                ignoreAllEdgeInsets:(BOOL)ignoreAllEdgeInsets {
-    return [[JHBLayoutableButton alloc] initWithLayoutStyle:layoutStyle space:space ignoreImageAndTitleEdgeInsets:NO ignoreAllEdgeInsets:YES];
-}
 @end
