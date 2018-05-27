@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = "jianghongbing"
   s.platform     = :ios, "8.0"
-  s.source       = https://github.com/jianghongbing/JHBLayoutableButton.git
+  s.source       = "https://github.com/jianghongbing/JHBLayoutableButton.git"
   s.source_files = "JHBLayoutableButton/Classes/*.{h,m}"
   s.framework    = "UIKit"
   s.requires_arc = true
