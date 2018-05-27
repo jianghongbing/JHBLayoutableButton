@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GH5-xL-avZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GH5-xL-avZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -249,11 +248,14 @@
         <scene sceneID="JIT-Gb-M7Y">
             <objects>
                 <viewController id="Uwl-aq-jYc" customClass="ILTRStyleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zQJ-2X-sTv"/>
+                        <viewControllerLayoutGuide type="bottom" id="IQ3-JA-nRB"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="J0Z-rK-DXx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="MAA-c5-gnd"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="itn-6E-FLd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -264,11 +266,14 @@
         <scene sceneID="zbU-a6-TMB">
             <objects>
                 <viewController id="Ycs-SP-akd" customClass="IBTTStyleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3tZ-Oo-xIs"/>
+                        <viewControllerLayoutGuide type="bottom" id="zE1-3B-CEn"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tc1-9d-r5u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="uVE-rT-qDX"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tab-9L-LWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -279,11 +284,14 @@
         <scene sceneID="QKN-O7-T4X">
             <objects>
                 <viewController id="GLp-Vg-9z9" customClass="IRTLStyleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XPi-Cd-PKA"/>
+                        <viewControllerLayoutGuide type="bottom" id="jFd-dM-AV4"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JRS-9J-qcn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="XtA-2j-fal"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LvQ-fq-PzQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -294,11 +302,14 @@
         <scene sceneID="rwe-Yf-oUT">
             <objects>
                 <viewController id="YTL-67-2fv" customClass="ITTBStyleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D9Z-0a-adx"/>
+                        <viewControllerLayoutGuide type="bottom" id="xAy-If-Z07"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PQp-EK-5Du">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="WD0-3C-NP2"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Coo-FG-LeW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -309,11 +320,14 @@
         <scene sceneID="P5T-pZ-xZP">
             <objects>
                 <viewController id="gAO-4o-1Rn" customClass="ImageOnlyStyleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rl7-pv-SGa"/>
+                        <viewControllerLayoutGuide type="bottom" id="acj-Bj-QZw"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Skj-Wq-lx7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="lP5-e2-zgw"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9vT-Ve-5Gl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -324,11 +338,14 @@
         <scene sceneID="hHm-SC-sIJ">
             <objects>
                 <viewController id="KqX-qt-BJO" customClass="TitleOnlyStyleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="emg-mG-UeL"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mef-05-1oJ"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tNK-Kf-te1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="BDL-OQ-EQZ"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ln5-EZ-pbN" userLabel="First Responder" sceneMemberID="firstResponder"/>
