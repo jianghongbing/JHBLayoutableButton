@@ -71,8 +71,15 @@ static NSString * const kJHBTitleLabelNumberOfLinesKeyPath = @"numberOfLines";
 }
 
 - (CGSize)intrinsicContentSize {
-    CGFloat width = [super intrinsicContentSize].width;
-    CGFloat height = [super intrinsicContentSize].height;
+    return [self perferSizeForSelf];
+}
+
+- (CGSize)sizeThatFits:(CGSize)size {
+    return [self perferSizeForSelf];
+}
+
+- (CGSize)perferSizeForSelf {
+    CGFloat width = 0.0, height = 0.0;
     UIEdgeInsets contentEdgeInsets = [self p_contentEdgeInsets];
     UIEdgeInsets imageEdgeInsets = [self p_imageEdgeInsets];
     UIEdgeInsets titleEdgeInsets = [self p_titleEdgeInsets];
@@ -83,7 +90,7 @@ static NSString * const kJHBTitleLabelNumberOfLinesKeyPath = @"numberOfLines";
         case JHBLayoutableButtonStyleILTR:
         case JHBLayoutableButtonStyleIRTL: {
             width = contentEdgeInsets.left + imageEdgeInsets.left + imageViewIntrinsicContentSize.width + imageEdgeInsets.right + space + titleEdgeInsets.left + titleLabelIntrinsicContentSize.width + titleEdgeInsets.right + contentEdgeInsets.right;
-            
+
             height = MAX(imageViewIntrinsicContentSize.height + imageEdgeInsets.top + imageEdgeInsets.bottom, titleLabelIntrinsicContentSize.height + titleEdgeInsets.top + titleEdgeInsets.bottom) + contentEdgeInsets.top + contentEdgeInsets.bottom;
         }
             break;

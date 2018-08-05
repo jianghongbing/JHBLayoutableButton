@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger, JHBLayoutableButtonStyle) {
  
  @param layoutStyle button layout sytle
  @param space space between image and title, if only image or title, will be ignored
- @param ignoreImageAndTitleEdgeInsets ignore image and title edge insets, edge insets make  layoutcomplicated, suggest use space to layout and ignore ignore image and title edge insets
+ @param ignoreImageAndTitleEdgeInsets ignore image and title edge insets, edge insets make  layout complicated, suggest use space to layout and ignore image and title edge insets
  @return UIButton instance
  */
 + (UIButton *)buttonWithLayoutStyle:(JHBLayoutableButtonStyle)layoutStyle

@@ -22,6 +22,8 @@
 		CEEB0FBE206387BE00D6E8C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEB0FBC206387BE00D6E8C4 /* LaunchScreen.storyboard */; };
 		CEEB0FC1206387BE00D6E8C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB0FC0206387BE00D6E8C4 /* main.m */; };
 		CEEB0FC92063880A00D6E8C4 /* UIButton+JHBLayoutableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB0FC82063880A00D6E8C4 /* UIButton+JHBLayoutableButton.m */; };
+		EBC2E2AA21153FA40047A9CF /* DynamicChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC2E2A921153FA40047A9CF /* DynamicChangeViewController.m */; };
+		EBC2E2AD211541150047A9CF /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC2E2AC211541150047A9CF /* UIImage+Color.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,10 @@
 		CEEB0FC0206387BE00D6E8C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEEB0FC72063880A00D6E8C4 /* UIButton+JHBLayoutableButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+JHBLayoutableButton.h"; sourceTree = "<group>"; };
 		CEEB0FC82063880A00D6E8C4 /* UIButton+JHBLayoutableButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JHBLayoutableButton.m"; sourceTree = "<group>"; };
+		EBC2E2A821153FA40047A9CF /* DynamicChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicChangeViewController.h; sourceTree = "<group>"; };
+		EBC2E2A921153FA40047A9CF /* DynamicChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicChangeViewController.m; sourceTree = "<group>"; };
+		EBC2E2AB211541150047A9CF /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		EBC2E2AC211541150047A9CF /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,10 @@
 				CE69B7542069DDFE00BA9F92 /* ITTBStyleViewController.m */,
 				CE69B7562069E88400BA9F92 /* IBTTStyleViewController.h */,
 				CE69B7572069E88400BA9F92 /* IBTTStyleViewController.m */,
+				EBC2E2A821153FA40047A9CF /* DynamicChangeViewController.h */,
+				EBC2E2A921153FA40047A9CF /* DynamicChangeViewController.m */,
+				EBC2E2AB211541150047A9CF /* UIImage+Color.h */,
+				EBC2E2AC211541150047A9CF /* UIImage+Color.m */,
 				CE69B75E206B33AD00BA9F92 /* StoryboardSegue.h */,
 				CE69B75F206B33AD00BA9F92 /* StoryboardSegue.m */,
 				CE69B761206B3A1A00BA9F92 /* TableViewController.h */,
@@ -200,9 +210,11 @@
 				CE69B7552069DDFE00BA9F92 /* ITTBStyleViewController.m in Sources */,
 				CE31AC842068D021005E6630 /* TitleOnlyStyleViewController.m in Sources */,
 				CE69B763206B3A1A00BA9F92 /* TableViewController.m in Sources */,
+				EBC2E2AA21153FA40047A9CF /* DynamicChangeViewController.m in Sources */,
 				CE31AC872068E00B005E6630 /* ILTRStyleViewController.m in Sources */,
 				CE69B7522069D62700BA9F92 /* IRTLStyleViewController.m in Sources */,
 				CEEB0FC1206387BE00D6E8C4 /* main.m in Sources */,
+				EBC2E2AD211541150047A9CF /* UIImage+Color.m in Sources */,
 				CEEB0FB3206387BE00D6E8C4 /* AppDelegate.m in Sources */,
 				CE69B7582069E88400BA9F92 /* IBTTStyleViewController.m in Sources */,
 				CE31AC7B2068C4A4005E6630 /* ImageOnlyStyleViewController.m in Sources */,
