@@ -24,6 +24,7 @@
     [self configButton4];
     [self configButton5];
     [self configButton6];
+    [self configButton7];
 }
 
 - (void)customNavigationItemTitleView {
@@ -96,7 +97,11 @@
     [button6 sizeToFit];
 }
 
-
+- (void)configButton7 {
+    UIButton *button7 = [self buttonWithStyle:JHBLayoutableButtonStyleIRTL title:@"Button7" titleColor:[UIColor whiteColor] backgroundColor:self.view.tintColor imageColor:[UIColor orangeColor] spece:3.0 sel:@selector(button7Clicked:)];
+    button7.frame = CGRectMake(20, 300, 100, 50);
+    [self.view addSubview:button7];
+}
 
 
 - (UIButton *)buttonWithStyle:(JHBLayoutableButtonStyle)style title:(NSString *)title titleColor:(UIColor *)titleColor backgroundColor:(UIColor *)backgroundColor imageColor:(UIColor *)imageColor spece:(CGFloat)space sel:(SEL)sel {
@@ -125,7 +130,7 @@
     }
 
 //    [button setTitle:@"Pressfsefsefes" forState:UIControlStateNormal];
-//    [button sizeToFit];
+    [button sizeToFit];
 }
 
 
@@ -167,7 +172,6 @@
         [button setImage:[UIImage imageFromColor:[UIColor orangeColor] size:CGSizeMake(50, 50)] forState:UIControlStateNormal];
     }else {
         [button setImage:[UIImage imageFromColor:[UIColor orangeColor] size:CGSizeMake(30, 30)] forState:UIControlStateNormal];
-
     }
 }
 
@@ -192,7 +196,29 @@
         [button setTitle:@"Button6" forState:UIControlStateNormal];
 
     }
-
 }
+
+- (void)button7Clicked:(UIButton *)button {
+    if (button.titleLabel.font.pointSize == UIFont.buttonFontSize) {
+        button.titleLabel.font = [UIFont boldSystemFontOfSize:30];
+    }else {
+        button.titleLabel.font = [UIFont systemFontOfSize:UIFont.buttonFontSize];
+    }
+    
+    if ([button.currentTitle isEqualToString:@"Button7"]) {
+        [button setTitle:@"Button7Button7" forState:UIControlStateNormal];
+    }else {
+        [button setTitle:@"Button7" forState:UIControlStateNormal];
+    }
+    
+    if (CGSizeEqualToSize(button.currentImage.size, CGSizeMake(30, 30))) {
+        [button setImage:[UIImage imageFromColor:[UIColor orangeColor] size:CGSizeMake(50, 50)] forState:UIControlStateNormal];
+    }else {
+        [button setImage:[UIImage imageFromColor:[UIColor orangeColor] size:CGSizeMake(30, 30)] forState:UIControlStateNormal];
+    }
+    
+    [button sizeToFit];
+}
+
 
 @end
