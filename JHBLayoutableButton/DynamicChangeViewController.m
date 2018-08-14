@@ -103,7 +103,6 @@
     [self.view addSubview:button7];
 }
 
-
 - (UIButton *)buttonWithStyle:(JHBLayoutableButtonStyle)style title:(NSString *)title titleColor:(UIColor *)titleColor backgroundColor:(UIColor *)backgroundColor imageColor:(UIColor *)imageColor spece:(CGFloat)space sel:(SEL)sel {
     UIButton *button = [UIButton buttonWithLayoutStyle:style spaceBetweenImageAndTitle:space];
     [button setTitle:title forState:UIControlStateNormal];
