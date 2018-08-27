@@ -9,7 +9,7 @@ a subclass of UIButton, which support to custom layout button' image view and ti
 
 ## Installation
 * drag source file into your project 
-* use Cocoapod pod 'JHBLayoutableButton', '~> 0.0.2'
+* use Cocoapods pod 'JHBLayoutableButton', '~> 0.0.2'
 
 ## Usage
 import UIButton+JHBLayoutableButton.h file
